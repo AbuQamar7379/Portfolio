@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top" id="navbar">
+        <div class="container">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMzYuOTc2IDE4LjI1OXMuMjA1LS40MTUgMC0uODgxYy0uMzMzLS43NTItLjkyMS0yLjEtMS41MS0yLjQ2Mi0uNjQtLjM2My0yLjM1My0uMjMzLTMuMTQ3LS4xNTYtLjA1IDAtLjQ4Ni4xMDQtLjU2Mi4yNi0uMDUyLjEzLS41ODkgMS4wMzYtLjU4OSAxLjAzNmwuNTEyLjI4NSA0LjgxIDIuNzczLjQ4Ni0uODU1Wm0tMTkuNTQ3LTIuMjU1Yy0uMTAyLS4xODEtLjUxMi0uODgtLjU2My0uOTg0LS4wNzctLjE4Mi0uNTEyLS4yNi0uNTYzLS4yNi0uODE5LS4wNzctMi41MDctLjIwNy0zLjE0Ny4xNTYtLjU4OC4zMzctMS4xNzcgMS43MS0xLjUxIDIuNDYyLS4yMDQuNDY2IDAgLjg4IDAgLjg4bC40ODcuODMgNS4yOTYtMy4wODRabTkuNjY5LS45OS0xLjQzLTEuOTIuMTkzLjk5NC0yLjE1NS0yLjI1Ni40ODkgMS42MDgtLjA2Mi4wMzYtMS43NjYtLjk4LjU1NSAxLjY4LTEwLjYwOSA2LjEzN2EyLjYwMSAyLjYwMSAwIDAgMC0xLjI3NCAyLjUzNmwuOTQ0IDguNjFhMi41OSAyLjU5IDAgMCAwIDEuMzUyIDIuMDA2bDkuNzYgNS4yYTIuNTMgMi41MyAwIDAgMCAyLjM4MiAwbDkuNzYtNS4yYTIuNTkyIDIuNTkyIDAgMCAwIDEuMzUxLTIuMDA3bC45NDQtOC42MDlhMi42MDEgMi42MDEgMCAwIDAtMS4yNzQtMi41MzZsLTkuMTYtNS4zWiIgZmlsbD0iI0ZGRiIvPjxwYXRoIGQ9Ik0yOS4xNDcgMjguMTA2YS4zODYuMzg2IDAgMCAwLS4zODQtLjM4OS4zODYuMzg2IDAgMCAwLS4zODQuMzg5YzAgLjgxNS0uNjUzIDEuNDc3LTEuNDU4IDEuNDc3aC0yLjEyNFYyNy4zOWMuNjM1LS4xNjEgMS40NTktLjU4OCAxLjQ1OS0xLjA5OCAwLS42NTEtLjg2OC0xLjE2Ni0xLjkyLTEuMTY2LTEuMDUgMC0xLjkxOC41MTUtMS45MTggMS4xNjYgMCAuNTYuOTMzIDEuMDE5IDEuNjEyIDEuMTM3djIuMTU0aC0yLjEyNGExLjQ2OCAxLjQ2OCAwIDAgMS0xLjQ1OC0xLjQ3Ny4zODYuMzg2IDAgMCAwLS4zODQtLjM4OS4zODYuMzg2IDAgMCAwLS4zODQuMzg5YzAgMS4xMDcuNzg5IDIuMDI4IDEuODI4IDIuMjE4bC4wOC41OTdjLjA4NC41OTcuMjEzIDEuNDkzLjM4OCAyLjY4N2EuOS45IDAgMCAwIC44NzQuNzc0bDEuMzg5LjAxOGEuOTI1LjkyNSAwIDAgMCAuMTk2LS4wMTIuMzguMzggMCAwIDAgLjEwNC4wMTZsMS40MjIuMDE5YS44OTkuODk5IDAgMCAwIC44OTYtLjc3bC41MDctMy4zMzhhMi4yNDggMi4yNDggMCAwIDAgMS43ODMtMi4yMVptLTIuMDUtMTMuMDkyLTEuNDMtMS45Mi4xOTQuOTk0LTIuMTU1LTIuMjU2LjQ4OSAxLjYwOC0uMDYyLjAzNi0xLjc2Ni0uOTguNTU1IDEuNjgtMTAuNjA5IDYuMTM3YTIuNjAxIDIuNjAxIDAgMCAwLTEuMjc0IDIuNTM2bC45NDQgOC42MWEyLjU5IDIuNTkgMCAwIDAgMS4zNTIgMi4wMDZsOS43NiA1LjJhMi41MyAyLjUzIDAgMCAwIDIuMzgyIDBsOS43Ni01LjJhMi41OTIgMi41OTIgMCAwIDAgMS4zNTEtMi4wMDdsLjk0NC04LjYwOWEyLjYwMSAyLjYwMSAwIDAgMC0xLjI3NC0yLjUzNmwtOS4xNi01LjNabS42OTEtLjc5NSA4Ljk3OCA1LjE5NGEzLjY0MSAzLjY0MSAwIDAgMSAxLjc4MyAzLjU1bC0uOTQzIDguNjFhMy42MjggMy42MjggMCAwIDEtMS44OTMgMi44MWwtOS43NiA1LjJhMy41NDIgMy41NDIgMCAwIDEtMy4zMzUgMGwtOS43Ni01LjJhMy42MjggMy42MjggMCAwIDEtMS44OTItMi44MWwtLjk0NC04LjYxYTMuNjQxIDMuNjQxIDAgMCAxIDEuNzg0LTMuNTVsOS44NzktNS43MTUtMS4xMTctMy4zODIgMS45MzIgMS4wNzJMMjEuNDcgOGwyLjcyIDIuODQ4LS4zODQtMS45NzYgMy45ODIgNS4zNDdabS0xMC43OTQgOC43MjdjMCAuNDQuMTcuODIxLjQ1NSAxLjExNC4yODQuMjk0LjY1NC40NyAxLjA4LjQ3LjE3IDAgLjMxMy0uMDMuNDU1LS4wNTlhMS41NyAxLjU3IDAgMCAwIDEuMDgtMS40OTZjMC0uODUtLjY4Mi0xLjU1NS0xLjUwNi0xLjU1NS0uMzcgMC0uNzExLjE0Ny0uOTY3LjM1Mi0uMzk4LjIzNS0uNTk3LjY3NS0uNTk3IDEuMTc0Wm0xMS4yNTcgMGMwIC40NC4xNy44MjEuNDU1IDEuMTE0LjI4NS4yOTQuNjU0LjQ3IDEuMDguNDcuMTcxIDAgLjMxMy0uMDMuNDU1LS4wNTlhMS41NyAxLjU3IDAgMCAwIDEuMDgtMS40OTZjMC0uODUtLjY4Mi0xLjU1NS0xLjUwNi0xLjU1NS0uMzcgMC0uNzEuMTQ3LS45NjcuMzUyLS4zOTguMjM1LS41OTcuNjc1LS41OTcgMS4xNzRabTguNzI1LTQuNjg3cy4yMDUtLjQxNSAwLS44ODFjLS4zMzMtLjc1Mi0uOTIxLTIuMS0xLjUxLTIuNDYyLS42NC0uMzYzLTIuMzUzLS4yMzMtMy4xNDctLjE1Ni0uMDUgMC0uNDg2LjEwNC0uNTYyLjI2LS4wNTIuMTMtLjU4OSAxLjAzNi0uNTg5IDEuMDM2bC41MTIuMjg1IDQuODEgMi43NzMuNDg2LS44NTVabS02LjE1NC0zLjY2NC4wMi0uMDM5Yy4yNjctLjU0My45NC0uODA4IDEuNDEyLS44MyAxLjcxNi0uMTY3IDIuOTMtLjE1OCAzLjcxMi4yODZsLjAzMi4wMTljLjU0My4zMzQuOTYuOTQzIDEuNDE5IDEuODU4LjE2LjMxOC4yNjEuNTQxLjQ5NCAxLjA2OGEyLjEyMyAyLjEyMyAwIDAgMS0uMDIgMS43NjVsLS4wMTMuMDI4LTEuMDEgMS43NzUtLjg4NC0uNTEtNC43OTctMi43NjYtMS40NDMtLjgwMy41NDctLjkyM2E1Mi44NzQgNTIuODc0IDAgMCAwIC4yOS0uNDk3bC4wMTEtLjAxOWEyMS4xNTQgMjEuMTU0IDAgMCAwIC4yMjQtLjM5OWwtLjAxLjAyNS4wMTYtLjAzOFptLTEzLjM5MyAxLjQxYy0uMTAyLS4xODItLjUxMi0uODgyLS41NjMtLjk4NS0uMDc3LS4xODItLjUxMi0uMjYtLjU2My0uMjYtLjgxOS0uMDc3LTIuNTA3LS4yMDctMy4xNDcuMTU2LS41ODguMzM3LTEuMTc3IDEuNzEtMS41MSAyLjQ2Mi0uMjA0LjQ2NiAwIC44OCAwIC44OGwuNDg3LjgzIDUuMjk2LTMuMDg0Wm0uMzU2LTEuNDQxLjI1Mi40NC4wMDMuMDA0LjE2LjI3OC4xMTguMjA0LjUwNi44OTgtNy4wNTYgNC4xMDgtMS4wMi0xLjc0LS4wMTctLjAzNGEyLjEyNSAyLjEyNSAwIDAgMS0uMDE5LTEuNzY5Yy4yNzMtLjYxNS4zMzQtLjc0OC40ODktMS4wNjEuNDY4LS45NDMuODg3LTEuNTU1IDEuNDU1LTEuODguNzgxLS40NDMgMS45NDItLjQ1MyAzLjcwNS0uMjg3LjUwNy4wMTYgMS4xNDYuMjQ2IDEuNDI0LjgzOVptNC41NjQgMTYuMjQ4YTgzLjEyMyA4My4xMjMgMCAwIDEtLjA2Mi0uNDUxYy40MTcuMDAxLjk2LjAwNCAxLjczNi4wMDktLjAzOCAxLjE2Ny0uMDcgMi4wNTItLjA5NyAyLjY1NS0uMDExLjI0NS0uMDIuNDQzLS4wMy41OTNsLTEuMDM2LS4wMTNhLjEyOC4xMjggMCAwIDEtLjEyNS0uMTEgNDQ4LjQ3NyA0NDguNDc3IDAgMCAxLS4zODYtMi42ODNabTIuNTY2IDIuODItLjEwOC0zLjI1NyAxLjc3LjAxLS40NzggMy4xNWEuMTI4LjEyOCAwIDAgMS0uMTI4LjExbC0xLjA1Ni0uMDEzWiIgZmlsbD0iIzNDM0MzQyIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9IiMzQzNDM0MiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iLjUiLz48L2c+PC9zdmc+"
+                alt="navImage" width="60px" height="60px">
+            <a class="navbar-brand d-none" href="#" id="navName" style="font-weight: 600;"></a>
+
+            <button id="navbarToggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skillsAcquired" style="color: #0d43a0;font-weight: 600;" id="navLink1">Skills
+              Acquired</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#myProjects" style="color: #0d43a0;font-weight: 600;" id="navLink2">My
+              Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- About -->
+    <div class="container-md p-5 mb-5">
+        <div class="card mb-3" style="margin-top: 50px; border: none">
+            <div class="row roww">
+                <div class="col col-md-8">
+                    <div class="card-body d-flex flex-column">
+                        <p class="fw-bolder m-0 hi text-center text-md-start">
+                            Hi, my name is
+                        </p>
+                        <p class="cardName text-center text-md-start" id="myName"></p>
+                        <p class="text-center text-md-start bio">
+                            I have built many industry grade projects from scratch and am armed with many technological skills useful for tech projects. Check out my projects below. :)
+                        </p>
+                        <div class="contact text-center text-md-start">
+                            <span id="contact"></span>
+                            <span class="d-inline-block" style="width: 1px;height: 15px;background-color: #606060;opacity: 1;"></span>
+                            <span id="email"> </span>
+
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start justify-content-md-start">
+                        <div class="row skillRow text-center" style="width: 100%">
+                            <div class="col skills rounded-start-5" style="margin-right: 1px">
+                                <span style="font-size: 48px" class="fw-bold skillNum" id="verifiedSkills"></span>
+                                <p>VERIFIED SKILLS</p>
+                            </div>
+                            <div class="col skills" style="margin-right: 1px">
+                                <span style="font-size: 48px" class="fw-bold skillNum" id="proProjects"></span>
+                                <p>PROFESSIONAL PROJECTS</p>
+                            </div>
+                            <div class="col skills rounded-end-5">
+                                <span style="font-size: 48px" class="fw-bold skillNum">12</span>
+                                <p>DSA PROBLEMS SOLVED</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 d-flex justify-content-center">
+                    <img src="" id="heroImage" class="heroImage" alt="Hero Image" width="300px" height="300px" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div style="background-color: #f1f1fa">
+        <div class="container p-5">
+            <div class="row" style="width: 100%">
+                <div class="d-flex align-items-center mb-4 justify-content-center">
+                    <h2 class="skillHead fw-bold text-center text-md-start" id="skillsAcquired">
+                        Skills Acquired
+                    </h2>
+                    <div style="background-color: #0d43a0; width: 100%; height: 3px" class="d-none d-md-inline-block"></div>
+                </div>
+            </div>
+            <div class="container grid d-grid pb-5" id="skillAcquired"></div>
+        </div>
+    </div>
+
+    <!-- My Projects -->
+    <div class="container-md container-lg mt-5" id="myProjects">
+        <div class="row" style="width: 80%">
+            <div class="d-flex align-items-center mb-4 justify-content-center">
+                <h2 class="skillHead fw-bold text-end text-md-start" id="myProjects">
+                    My Projects
+                </h2>
+                <div style="background-color: #0d43a0; width: 100%; height: 3px" class="d-none d-md-inline-block"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+    <script>
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = '#4883e9'; // Change to your desired background color
+                document.getElementById('navName').style.color = 'white';
+                document.getElementById('navLink1').style.color = 'white';
+                document.getElementById('navLink2').style.color = 'white';
+                document.getElementById('navbarToggle').style.backgroundColor = '#4883e9';
+
+                document.getElementById('navName').className = 'navbar-brand';
+            } else {
+                navbar.style.backgroundColor = ''; // Initial background color
+
+                document.getElementById('navName').className = 'navbar-brand d-none';
+                document.getElementById('navbarToggle').style.backgroundColor = '';
+                document.getElementById('navLink1').style.color = '#0d43a0';
+                document.getElementById('navLink2').style.color = '#0d43a0';
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
