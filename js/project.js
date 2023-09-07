@@ -131,7 +131,46 @@ let project = [
 
 
     // Portfolio
-    // [{
+    {
+        name: "Portfolio",
+        mfr: "Sep 2023",
+        link: /*'https://abuqamar-portfolio.netlify.app/'*/ '#',
+        info: "This is my portfolio.", // During the course of this project
+        modules: [
+            "Created web pages from scratch using HTML and CSS and made them dynamic using JavaScript",
+            "Used accordion to improve UI",
+            "Utilized Bootstrap extensively for responsive design",
+            "Deployed the website to Netlify"
+        ],
+        skills: [
+            "Bootstrap Display",
+            "CSS Positioning",
+            "Bootstrap Responsive Images",
+            "Bootstrap Flex",
+            "FlexBox",
+            "Bootstrap Spacing",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "ES6",
+            "Bootstrap",
+            "CSS Flexbox",
+            "Bootstrap Cards",
+            "CSS Animation",
+            "Dynamic Programming",
+            "Responsive Design",
+            "Conditional Rendering",
+            "Event handling",
+            "Developer Tools",
+            "DOM Manipilation",
+            "JSON objects",
+            "VS Code Live Server",
+            "GitHub Deployment",
+            "Deployment",
+            "Netlify",
+            "Netlify CLI"
+        ],
+    },
 
 ];
 

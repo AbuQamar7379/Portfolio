@@ -69,11 +69,18 @@ let addProjectToDom = () => {
       </button>        
   </div>
   </div>
-  <a href="${ele.link}" target="_blank" class="text-center text-md-start"><button type="button" class="liveDemo">View Live Demo</button></a>
+  <a href="${ele.link}" target="_blank" class="text-center text-md-start"><button type="button" class="liveDemo" id="liveDemo${ind}">View Live Demo</button></a>
     `;
-
         document.getElementById("myProjects").append(projectCard);
     });
+
+    // portfolio project alert
+    for (let i = 0; i < project.length; i++) {
+        if (i === 4) {
+            document.getElementById(`liveDemo${i}`).setAttribute('onclick', 'alert("You are already here. :)")');
+            document.getElementById(`liveDemo${i}`).parentElement.setAttribute('target', '_self');
+        }
+    }
 };
 addProjectToDom();
 
