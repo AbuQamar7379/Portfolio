@@ -43,12 +43,12 @@ addSkills();
 let addProjectToDom = () => {
     project.forEach((ele, ind) => {
         let projectCard = document.createElement("div");
-        projectCard.className = "card mb-3";
+        projectCard.className = "card projectCard";
         projectCard.style.width = "100%";
         projectCard.style.backgroundColor = "#f1f1fa";
         projectCard.style.border = "none";
         projectCard.style.borderRadius = "20px";
-        projectCard.style.marginBottom = "10px";
+        projectCard.style.marginBottom = "2.2rem";
 
         projectCard.innerHTML = `
     <div class="card-body pb-0 ">
@@ -69,8 +69,10 @@ let addProjectToDom = () => {
       </button>        
   </div>
   </div>
-  <a href="${ele.link}" target="_blank" class="text-center text-md-start"><button type="button" class="liveDemo" id="liveDemo${ind}">View Live Demo</button></a>
-    `;
+  <div class="text-center text-md-start mt-4 mb-4">
+  <a href="${ele.link}" target="_blank" class="text-decoration-none" ><button type="button" class="liveDemo" id="liveDemo${ind}">View Live Demo</button></a>
+  </div>
+  `;
         document.getElementById("myProjects").append(projectCard);
     });
 
