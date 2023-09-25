@@ -78,6 +78,10 @@ let addProjectToDom = () => {
 
     // portfolio project alert
     for (let i = 0; i < project.length; i++) {
+        if (i === 3) {
+            document.getElementById(`liveDemo${i}`).setAttribute('onclick', 'alert("Work in progress. :)")');
+            document.getElementById(`liveDemo${i}`).parentElement.setAttribute('target', '_self');
+        }
         if (i === 4) {
             document.getElementById(`liveDemo${i}`).setAttribute('onclick', 'alert("You are already here. :)")');
             document.getElementById(`liveDemo${i}`).parentElement.setAttribute('target', '_self');

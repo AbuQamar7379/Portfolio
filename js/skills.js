@@ -30,6 +30,10 @@ let skills = [{
         name: "Linux",
         src: "https://crio-directus-assets.s3.ap-south-1.amazonaws.com/e5dbb263-bf91-499f-b90b-9f33f2454bef.png",
     },
+    {
+        name: 'React',
+        src: 'https://crio-directus-assets.s3.ap-south-1.amazonaws.com/d2ce38c9-cbee-481e-92fb-1b829dcd239c.png'
+    }
 ];
 
 export { skills };
